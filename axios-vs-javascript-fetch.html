@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="google-site-verification" content="bp7o7KPz46Q-rExOV7jzjtpJbPIsHS66YDXNpDjL28s" />
+<meta name="viewport" content="width=device-width" /> 
+<title>Sewell Stephens | Axios vs Javascript fetch</title>
+<link rel="icon" href="my-pic-fav.png" /> 
+<link rel="stylesheet" href="/dist/output.css" /><!--Build command: npx tailwindcss -i ./styles/input.css -o ./dist/output.css --watch -->
+<style>
+
+  body {
+ font-family: arial;
+ overflow-x: hidden;
+ margin: auto;
+ 
+ 
+}
+
+</style>
+</head>
+<body>
+
+<div class="max-w-[750px] m-auto p-1">
+  <br>
+  <div class="flow-root">
+<div style="align-self: center;" class="float-left"><a class="text-3xl" style="font-size: 20px; line-height: 100%;" href="index" id="hdtext"><strong>Sewell Stephens</strong></a></div>
+<div style="margin-left: auto; align-self: center;" class="float-right"></div>
+</div>
+</div>
+<div style="display: none; clear: both;"></div>
+<div class="max-w-[750px] m-auto p-1">
+  <br>
+<span>
+<br>
+<p style="font-size: 14px;"><a style="font-size: 35px;"><strong>Axios vs Javascript fetch</strong></a><br>April 3, 2023</p>
+<br>
+<br>
+
+<p>If you've ever dealt with APIs, you've probably heard of several ways to make API calls. Today we're focusing primarily on Fetch and Axios.</p>
+
+<p>First thing to note is that Axios is not like Fetch. For those of you who know the difference may thing this post is the most idiotic comparison.</p>
+
+<p class="mt-2 mb-2 text-2xl font-bold">Lets look at fetch first.</p>
+
+<p>Fetch can call APIs in the frontend and backend depending on cors restrictions without an NPM package unlike Axios. Fetch tipically requires more configuration than Axios, although it isn't too big of a difference. For those who don't want to fool around with NPM to make an API call, I would say fetch is the way to go. A fetch call will look something like this.</p>
+<br>
+<div class="inline-block p-8 pr-8 text-base w-full leading-relaxed text-white bg-indigo-900 rounded-lg shadow-lg xl:text-lg xl:pr-16"><pre>fetch('https://example.com', {
+          method: 'POST',
+          body: JSON.stringify(subdata),
+        })
+          .then((response) => response.json())
+          .then((subdata) => {
+            console.log('Success:');
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+          });</pre></div>
+
+<p>Axios on the other hand requires an NPM package but requires less code upfront. Axios also is really easy to use. Not that fetch isnt, but I've seen Axios requests that are only two lines of code literally. Axios calls are formatted completely different, meaning that you will need to understand differently. Heres an Axios call for you.</p>
+<br>
+<div class="inline-block p-8 pr-8 text-base w-full leading-relaxed text-white bg-indigo-900 rounded-lg shadow-lg xl:text-lg xl:pr-16"><pre>const options = {
+  url: "https://example.com",
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  data: {
+    "id": "example",
+    "title": "Example",
+    "pubkey": "random"
+  }
+};
+
+axios(options)
+  .then(response => {
+    console.log(response.status);
+  });</pre></div>
+
+<p>Anyway, thats all</p>
+
+</div>
+<div style="background-color: #e3f1fa;">
+  <div class="max-w-[750px] m-auto p-1">
+    <br>
+    <br>
+  <br />
+  <div class="flex justify-center">  <a href="index"><img src="my-pic-2.jpg" width="60" height="60" class="rounded-full"></img></a></div>
+  <br />
+   <p style="text-align: center; font-size: 14px;">Software that clicks</p>
+  <br>
+  </div>
+  </div>
+</body>
