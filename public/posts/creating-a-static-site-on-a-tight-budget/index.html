@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="google-site-verification" content="bp7o7KPz46Q-rExOV7jzjtpJbPIsHS66YDXNpDjL28s" />
+<meta name="viewport" content="width=device-width" /> 
+<title>Creating a static site on a tight budget</title>
+<link rel="icon" href="/media/my-pic-fav.png" /> 
+<script src="/scripts/post-fetch.js"></script>
+<link rel="stylesheet" href="/dist/output.css" /><!--Build command: npx tailwindcss -i ./styles/input.css -o ./dist/output.css --watch -->
+<style>
+
+  body {
+ font-family: arial;
+ overflow-x: hidden;
+ margin: auto;
+ 
+ 
+}
+
+</style>
+</head>
+<body>
+
+<div class="max-w-[750px] m-auto p-1">
+  <br>
+  <div class="flow-root">
+<div style="align-self: center;" class="float-left"><a class="text-3xl" style="font-size: 20px; line-height: 100%;" href="/" id="hdtext"><strong>Sewell Stephens</strong></a></div>
+<div style="margin-left: auto; align-self: center;" class="float-right"></div>
+</div>
+</div>
+<div style="display: none; clear: both;"></div>
+
+
+
+<div class="max-w-[750px] m-auto p-1">
+    <br>
+<p style="font-size: 14px;"><a style="font-size: 35px;"><strong>Creating a static site on a tight budget</strong></a><br>May 21, 2023</p>
+<br>
+<br>
+
+
+<style>
+
+#postcontent h1 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+#postcontent h2 {
+        font-size: 27px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      #postcontent h3 {
+        font-size: 23px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      #postcontent ul {
+        list-style-type: disc;
+        margin-left: 40px;
+      }
+      #postcontent a {
+        text-decoration: underline;
+        color: #299fff;
+      }
+
+      #postcontent pre {
+        background-color: #ededed;
+        padding: 15px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: none;
+        border-radius: 10px;
+      }
+
+</style>
+
+<span>
+
+<div id="postcontent">
+  <p>If you are on a tight budget, and want to create a static site on a custom domain, your in luck. If your hosting a static site on a tight budget, I highly recommend something like Netlify. You can drag and drop your static site code or connect to Github repo.</p>
+<h3>How?</h3>
+<p>Just create Github repo for website folder with Github desktop, or drag and drop folder into Netlify Deploys page. I recommend pushing code to Github and deploying that way.</p>
+<h3>Why not just use a page builder?</h3>
+<p>Page builders tend to cost more and can add up quickly. Take Webflows pricing for example:</p>
+<p><img src="/media/Screenshot%202024-02-10%20at%206.17.52%E2%80%AFPM.png" alt=""></p>
+<p>May not seem that bad, but it adds up quickly, trust me. Its way cheaper to use a static site host like Netlify, Vercel, or Cloudflare Pages. With Netlify, if you don't want to connect to a Github repo, you can use <a href="https://app.netlify.com/drop">Netlify Drop</a>. This ensures you save money, and don't spend unnessesary fees on page/website builders.</p>
+<h3>Connecting a CMS</h3>
+<p>Connecting a CMS is easy once you know how. I reccommend 11ty with Decap CMS (aka Netlify CMS). If you don't know how, I didnt at first either. First install 11ty</p>
+<pre><code>npm install @11ty/eleventy --save-dev
+</code></pre>
+<p>After that, you need to code njk template files. If you dont know what those are, they let you split your site into components like in NextJS. I like NextJS too, but for a simple blog site, it seems overkill (to me). If you don't know how to use njk files, they basically are like HTML files but with meta data that lets you specify parameters. Heres an example</p>
+<pre><code>---
+title: Home
+layout: 'base.njk'
+---
+</code></pre>
+<p>Title specifys the page title to use with the page, and layout tells it what template to render the file. Base.njk could include.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Creating a static site on a tight budget&lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;nav&gt;
+
+&lt;!-- Navigation --&gt;
+
+&lt;/nav&gt;
+
+content here
+
+&lt;footer&gt;
+
+&lt;!-- Footer --&gt;
+
+&lt;/footer&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+<h3>Adding Decap CMS</h3>
+<p>To add Decap CMS, visit their <a href="https://decapcms.org/docs/install-decap-cms/">documentation</a>, its very good and well written. The reason I went into detail on 11ty is because their docs kinda suck. Thanks.</p>
+
+</div>
+
+</div>
+
+
+<div style="background-color: #e3f1fa;">
+  <div class="max-w-[750px] m-auto p-1">
+    <br>
+    <br>
+  <br />
+  <div class="flex justify-center">  <a href="/"><img src="/media/my-pic-2.jpg" width="60" height="60" class="rounded-full"></img></a></div>
+  <br />
+   <p style="text-align: center; font-size: 14px;">Software that clicks</p>
+  <br>
+  </div>
+  </div>
+</body>

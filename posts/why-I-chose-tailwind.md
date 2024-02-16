@@ -1,5 +1,8 @@
 ---
+layout: 'article.njk'
 title: Why I chose Tailwind
+date: 2022-12-23T04:02:00.000Z
+tags: post
 ---
 
 So I was trying to find free html and css landing page templates, but they don't exist unless you wont some junk off W3schools. I searched for a while and finally came to the decision to buy Tailwind UI. So now I run numerious landing pages with Tailwind and I have to say its a time saver. and no this isnt some stupid affiliate bullshit, I truely feel that Tailwind is a timesaver. If you ask me, just buy the marketing components pack. It will cost you around $150 once but its totally worth it.

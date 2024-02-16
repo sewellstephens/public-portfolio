@@ -1,9 +1,14 @@
+---
+eleventyImport:
+  collections: ["post"]
+---
+
 <!DOCTYPE html>
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="google-site-verification" content="bp7o7KPz46Q-rExOV7jzjtpJbPIsHS66YDXNpDjL28s" />
 <meta name="viewport" content="width=device-width" /> 
-<link rel="icon" href="my-pic-fav.png" />
+<link rel="icon" href="/media/my-pic-fav.png" />
 <title>Sewell Stephens | Software developer</title> 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
@@ -21,21 +26,11 @@
 </style>
 </head>
 <body lang="en">
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
+<script src="/js/identity.js"></script>
 <div class="max-w-[750px] ml-[150px] p-1" style="margin-top: 20px;">
 <p style="clear: both;"></p>
 <span>
-<img src="my-pic-2.jpg" width="130" height="130" class="rounded-full"></img>
+<img src="/media/my-pic-2.jpg" width="130" height="130" class="rounded-full"></img>
 <br>
 <br>
 <br>
@@ -65,12 +60,11 @@
 <br>
 <br>
 
-<br><p><a href="creating-a-static-website-on-a-tight-budget" class="underline text-[#299fff]">Creating a static site on a tight budget</a><br>May 22, 2023</p>
+{%- for post in collections.post | reverse -%}
+   {% include 'article-snippet.njk' %}
+{%- endfor %}
 
-<br><p><a href="axios-vs-javascript-fetch" class="underline text-[#299fff]">Axios vs Javascript fetch</a><br>April 3, 2023</p>
-
-<br><p><a href="why-i-chose-tailwind" class="underline text-[#299fff]">Why I chose Tailwind</a><br>Dec 23, 2022</p>
-<br />
+</div>
 <br />
 <br>
 <br>

@@ -1,10 +1,10 @@
 ---
-layout: blog
-title: Axios vs javascript fetch
-date: 2023-04-23T00:36:00.000Z
-thumbnail: /media/my-pic-2.jpg
-rating: 1
+layout: 'article.njk'
+title: Axios vs Javascript fetch
+date: 2023-04-03T04:02:00.000Z
+tags: post
 ---
+
 If you've ever dealt with APIs, you've probably heard of several ways to make API calls. Today we're focusing primarily on Fetch and Axios.
 
 First thing to note is that Axios is not like Fetch. For those of you who know the difference may thing this post is the most idiotic comparison.

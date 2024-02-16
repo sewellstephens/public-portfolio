@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="google-site-verification" content="bp7o7KPz46Q-rExOV7jzjtpJbPIsHS66YDXNpDjL28s" />
+<meta name="viewport" content="width=device-width" /> 
+<title>Axios vs Javascript fetch</title>
+<link rel="icon" href="/media/my-pic-fav.png" /> 
+<script src="/scripts/post-fetch.js"></script>
+<link rel="stylesheet" href="/dist/output.css" /><!--Build command: npx tailwindcss -i ./styles/input.css -o ./dist/output.css --watch -->
+<style>
+
+  body {
+ font-family: arial;
+ overflow-x: hidden;
+ margin: auto;
+ 
+ 
+}
+
+</style>
+</head>
+<body>
+
+<div class="max-w-[750px] m-auto p-1">
+  <br>
+  <div class="flow-root">
+<div style="align-self: center;" class="float-left"><a class="text-3xl" style="font-size: 20px; line-height: 100%;" href="/" id="hdtext"><strong>Sewell Stephens</strong></a></div>
+<div style="margin-left: auto; align-self: center;" class="float-right"></div>
+</div>
+</div>
+<div style="display: none; clear: both;"></div>
+
+
+
+<div class="max-w-[750px] m-auto p-1">
+    <br>
+<p style="font-size: 14px;"><a style="font-size: 35px;"><strong>Axios vs Javascript fetch</strong></a><br>Apr 2, 2023</p>
+<br>
+<br>
+
+
+<style>
+
+#postcontent h1 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+#postcontent h2 {
+        font-size: 27px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      #postcontent h3 {
+        font-size: 23px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      #postcontent ul {
+        list-style-type: disc;
+        margin-left: 40px;
+      }
+      #postcontent a {
+        text-decoration: underline;
+        color: #299fff;
+      }
+
+      #postcontent pre {
+        background-color: #ededed;
+        padding: 15px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: none;
+        border-radius: 10px;
+      }
+
+</style>
+
+<span>
+
+<div id="postcontent">
+  <p>If you've ever dealt with APIs, you've probably heard of several ways to make API calls. Today we're focusing primarily on Fetch and Axios.</p>
+<p>First thing to note is that Axios is not like Fetch. For those of you who know the difference may thing this post is the most idiotic comparison.</p>
+<h3>Lets look at fetch first.</h3>
+<p>Fetch can call APIs in the frontend and backend depending on cors restrictions without an NPM package unlike Axios. Fetch tipically requires more configuration than Axios, although it isn't too big of a difference. For those who don't want to fool around with NPM to make an API call, I would say fetch is the way to go. A fetch call will look something like this.</p>
+<pre><code class="language-javascript">fetch('https://example.com', {
+  method: 'POST',
+  body: JSON.stringify(subdata),
+})
+  .then((response) =&gt; response.json())
+  .then((subdata) =&gt; {
+    console.log('Success:');
+  })
+  .catch((error) =&gt; {
+    console.error('Error:', error);
+  });
+</code></pre>
+<p>Axios on the other hand requires an NPM package but requires less code upfront. Axios also is really easy to use. Not that fetch isnt, but I've seen Axios requests that are only two lines of code literally. Axios calls are formatted completely different, meaning that you will need to understand differently. Heres an Axios call for you.</p>
+<pre><code class="language-javascript">const options = {
+  url: &quot;https://example.com&quot;,
+  method: &quot;POST&quot;,
+  headers: {
+    &quot;Content-Type&quot;: &quot;application/json&quot;
+  },
+  data: {
+    &quot;id&quot;: &quot;example&quot;,
+    &quot;title&quot;: &quot;Example&quot;,
+    &quot;pubkey&quot;: &quot;random&quot;
+  }
+};
+
+axios(options)
+  .then(response =&gt; {
+    console.log(response.status);
+  });
+</code></pre>
+<p>Anyway, thats all</p>
+
+</div>
+
+</div>
+
+
+<div style="background-color: #e3f1fa;">
+  <div class="max-w-[750px] m-auto p-1">
+    <br>
+    <br>
+  <br />
+  <div class="flex justify-center">  <a href="/"><img src="/media/my-pic-2.jpg" width="60" height="60" class="rounded-full"></img></a></div>
+  <br />
+   <p style="text-align: center; font-size: 14px;">Software that clicks</p>
+  <br>
+  </div>
+  </div>
+</body>
