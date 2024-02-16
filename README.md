@@ -19,12 +19,12 @@ I currently use this template that I created on [My own portfolio](https://sewel
 Clone repository into VSCode:
 
 ```
-git clone https://github.com/sewellstephens/sewellstephens-portfolio.git
+git clone https://github.com/sewellstephens/11ty-decap-cms-boilerplate.git
 ```
 
 Or deploy directly to Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sewellstephens/sewellstephens-portfolio)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sewellstephens/11ty-decap-cms-boilerplate)
 
 Then 
 ```
