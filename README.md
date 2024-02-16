@@ -2,7 +2,7 @@
 
 Open source portfolio template built in [11ty](https://11ty.dev), and blog content using Decap CMS
 
-[Live demo](https://11ty-decap-cms-boilerplate-ss.netlify.app/)
+[Live example](https://11ty-decap-cms-boilerplate-ss.netlify.app/)
 
 ## Features include
 
