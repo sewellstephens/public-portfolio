@@ -2,6 +2,8 @@
 
 Open source portfolio template built in [11ty](https://11ty.dev), and blog content using Decap CMS
 
+I currently use this template that I created on [My own portfolio](https://sewellstephens.com)
+
 ## Features include
 
  - Decap CMS (aka Netlify CMS) portal
