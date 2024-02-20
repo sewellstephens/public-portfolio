@@ -48,5 +48,3 @@ To set up Git Gateway, go into Netlify site configuration and click "Identity", 
 ![Screenshot 2](/Screenshot%202.png)
 
 After that, you should have Git Gateway enabled
-
-Update: branch master renamed: https://www.hanselman.com/blog/easily-rename-your-git-default-branch-from-master-to-main
