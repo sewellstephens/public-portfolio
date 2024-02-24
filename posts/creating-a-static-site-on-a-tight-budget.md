@@ -1,5 +1,5 @@
 ---
-layout: 'article.njk'
+layout: article.njk
 title: Creating a static site on a tight budget
 date: 2023-05-22T04:02:00.000Z
 tags: post
@@ -21,7 +21,7 @@ May not seem that bad, but it adds up quickly, trust me. Its way cheaper to use 
 
 ### Connecting a CMS
 
-Connecting a CMS is easy once you know how. I reccommend 11ty with Decap CMS (aka Netlify CMS). If you don't know how, I didnt at first either. First install 11ty
+Connecting a CMS is easy once you know how. I reccommend eleventy with Decap CMS (aka Netlify CMS). If you don't know how, I didnt at first either. First install 11ty
 
 ```
 npm install @11ty/eleventy --save-dev
@@ -69,4 +69,4 @@ content here
 
 ### Adding Decap CMS
 
-To add Decap CMS, visit their [documentation](https://decapcms.org/docs/install-decap-cms/), its very good and well written. The reason I went into detail on 11ty is because their docs kinda suck. Thanks.
+To add Decap CMS, visit their [documentation](https://decapcms.org/docs/install-decap-cms/), its very good and well written. The reason I went into detail on eleventy is because their docs kinda suck. Thanks.
