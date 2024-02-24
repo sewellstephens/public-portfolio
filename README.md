@@ -1,6 +1,6 @@
 # Open source portfolio/blog boilerplate
 
-Open source portfolio template built in [11ty](https://11ty.dev), and blog content using Decap CMS
+Open source portfolio template built in [eleventy](https://11ty.dev), and blog content using Decap CMS
 
 [Live example](https://11ty-decap-cms-boilerplate-ss.netlify.app/)
 
@@ -8,7 +8,7 @@ Open source portfolio template built in [11ty](https://11ty.dev), and blog conte
 
  - Decap CMS (aka Netlify CMS) portal
  - Tailwind CSS v3
- - 11ty v2
+ - Eleventy v2
  - Minimal design
  - Easy to set up
 
