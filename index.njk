@@ -1,53 +1,11 @@
 ---
+layout: 'base-2.njk'
 eleventyImport:
   collections: ["post"]
 ---
-
-<!DOCTYPE html>
-<head>
-<script src="https://kit.fontawesome.com/604a31dafa.js" crossorigin="anonymous"></script>
-<meta name="google-site-verification" content="bp7o7KPz46Q-rExOV7jzjtpJbPIsHS66YDXNpDjL28s" />
-<meta name="viewport" content="width=device-width" /> 
-<link rel="icon" href="/media/s-icon.png" />
-<title>Sewell Stephens</title> 
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-<link rel="stylesheet" href="/dist/output.css" /><!--Build command: npx tailwindcss -i ./styles/input.css -o ./dist/output.css --watch -->
-<style>
-
-  body {
- font-family: arial;
- overflow-x: hidden;
- margin: auto;
- 
- 
-}
-
-</style>
-</head>
-<body lang="en">
-<script src="/js/identity.js"></script>
-<div class="max-w-[750px] ml-[150px] p-1" style="margin-top: 20px;">
-<p style="clear: both;"></p>
-<span>
-<img src="/media/my-pic-2.jpg" width="130" height="130" class="rounded-full"></img>
-<br>
-<br>
-<br>
-<br>
-<strong><a class="text-3xl" style="font-size: 35px;">I'm Sewell Stephens</a></strong>
-<br>
-<br>
-<!--About-->
-<br>
-<p style="font-size: 18px;">I'm a developer. Been creating B2B SaaS and Open Source material for some time. I have been creating stuff for 7 years and built my first fully functional SaaS product in 2020. I had worked on a few products prior, but never finished or released them 😞. I currently run <a href="https://obeatow.com" class="underline text-black hover:text-gray-600">Obeatow</a> and <a href="https://imgartfiscreator.club" class="underline text-black hover:text-gray-600">Imgartfis</a> previously owning Twayobiz and Rototer. I am passonate about what I create and hate dishonest feedback as I want to know really what the problem is. </p>
-<br><p>Contact me: <a href="mailto:hey@mysewellstephens.com" class="underline text-black hover:text-gray-600">hey@mysewellstephens.com</a> ✨</p>
-<br>
- <p style="font-size: 30px;"><a href="https://github.com/Sewellstephens" class="text-black hover:text-gray-600"><i class='fab fa-github'></i></a> <a href="https://twitter.com/sewell_stephens" class="ml-5 text-black hover:text-gray-600"><i class="fa-brands fa-x-twitter"></i></a> <a href="https://linkedin.com/in/sewellstephens104" class="ml-5 text-black hover:text-gray-600"><i class="fa-brands fa-linkedin"></i></a></p>
-                
+             
 
 <br>
-<!--Products section-->
 <h2 style="font-size: 30px;"><strong>Projects</strong></h2>
 
 
@@ -55,19 +13,14 @@ eleventyImport:
 <br><a href="https://twayobiz.com" class="underline text-black hover:text-gray-600">Twayobiz</a><br>Link shortener with powerful features (2021-2022)</p>
 <br><a href="https://sewellstephenssoft.gumroad.com/l/high-quality-prompts-biz-owners" class="underline text-black hover:text-gray-600">ChatGPT Prompts</a><br>ChatGPT prompts for business owners (2023)</p>
 <br><a href="https://imgartfiscreator.club" class="underline text-black hover:text-gray-600">Imgartfis Creator</a><br>AI image generation (2023-now)</p>
-<br><a href="https://sewellstephens.github.io/asd-projects/snake" class="underline text-black hover:text-gray-600">Snake</a><br>Snake game featuring apple</p>
-<br><a href="https://sewellstephens.github.io/projects/bouncing-box/" class="underline text-black hover:text-gray-600">Bouncing Box</a><br>A box thats nearly impossible to click</p>
-<br><a href="https://sewellstephens.github.io/asd-projects/data-shapes/" class="underline text-black hover:text-gray-600">Data shapes</a><br>A shape simulator created with jQuery</p>
-
+<br><a href="/work" class="underline text-black hover:text-gray-600">More work</a></p>
 
 <br>
 <br>
-<!--Blog posts-->
-<h2 style="font-size: 30px;"><strong>Blog posts</strong></h2>
+<h2 style="font-size: 30px;"><strong>Education</strong></h2>
 
-{%- for post in collections.post | reverse -%}
-   {% include 'article-snippet.njk' %}
-{%- endfor %}
+<br><p><a href="https://operationspark.org" class="underline text-black hover:text-gray-600">Operation Spark</a><br>Online coding class based in New Orleans</p>
+<br><p>Self taught<br>All my other coding skills I learned myself</p>
 
 </div>
 <br />
@@ -80,11 +33,3 @@ eleventyImport:
 
 </span>
 </div>
-<!--Footer-->
-<div class="max-w-[750px] m-auto p-1">
-  <div>
-   <p class="text-center text-sm">&copy; 2024 Sewell Stephens. - <a href="https://github.com/sewellstephens/11ty-decap-cms-boilerplate" class="underline text-black hover:text-gray-600">Open source code</a></p>
-  <br>
-  </div>
-  </div>
-</body>

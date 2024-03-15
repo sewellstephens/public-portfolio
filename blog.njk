@@ -1,0 +1,17 @@
+---
+layout: 'base-2.njk'
+eleventyImport:
+  collections: ["post"]
+---               
+
+<br>
+<h2 style="font-size: 30px;"><strong>Blog posts</strong></h2>
+
+{%- for post in collections.post | reverse -%}
+   {% include 'article-snippet.njk' %}
+{%- endfor %}
+
+</div>
+<br />
+<br>
+<br>
