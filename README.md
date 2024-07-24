@@ -1,3 +1,5 @@
+This repo is no longer maintained and is archived
+
 # Open source portfolio/blog boilerplate
 
 Open source portfolio template built in [eleventy](https://11ty.dev), and blog content using Decap CMS
