@@ -1,4 +1,3 @@
-This repo is no longer maintained and is archived
 
 # Open source portfolio/blog boilerplate
 
