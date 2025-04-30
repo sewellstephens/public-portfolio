@@ -1,6 +1,7 @@
 { "scripts": {
-   "build": "eleventy && npx tailwindcss -i ./styles/input.css -o ./dist/styles.css",
-   "start": "eleventy --serve && npx tailwindcss -i ./styles/input.css -o ./dist/styles.css"
+   "build": "eleventy && tailwindcss -i ./styles/input.css -o ./dist/styles.css --watch",
+   "start": "eleventy --serve && tailwindcss -i ./styles/input.css -o ./dist/styles.css --watch",
+   "css": "tailwindcss -i ./styles/input.css -o ./dist/styles.css --watch"
 },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",

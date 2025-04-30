@@ -1,0 +1,30 @@
+---
+layout: 'base-2.njk'
+eleventyImport:
+  collections: ["post"]
+pagination:
+  data: collections.post
+  size: 5
+  alias: pagedPosts
+---
+
+<br>
+<h2 class="font-bold text-[20px]">Blog posts</h2>
+
+{%- for post in collections.post -%}
+   {% include 'article-snippet.njk' %}
+{%- endfor %}
+
+<div class="pagination">
+  {%- if pagination.previousPage -%}
+    <a href="{{ pagination.href.previous }}">Previous</a>
+  {%- endif -%}
+  {%- if pagination.nextPage -%}
+    <a href="{{ pagination.href.next }}">Next</a>
+  {%- endif -%}
+</div>
+
+</div>
+<br />
+<br>
+<br>

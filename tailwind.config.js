@@ -1,20 +1,9 @@
 module.exports = {
-content: ['./**/*.{html,njk,md}'],
-theme: {
-  extend: {
-    typography: {
-      DEFAULT: {
-        css: {
-          a: {
-            color: '#299fff',
-            textDecoration: 'underline',
-          },
-        },
-      },
-    },
+  content: ['./**/*.{html,njk,md}'],
+  theme: {
+    extend: {},
   },
-},
-plugins: [
-  require('@tailwindcss/typography')
-],
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 };

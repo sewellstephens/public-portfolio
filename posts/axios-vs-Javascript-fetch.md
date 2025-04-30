@@ -7,7 +7,7 @@ tags: post
 
 If you've ever dealt with APIs, you've probably heard of several ways to make API calls. Today we're focusing primarily on Fetch and Axios.
 
-First thing to note is that Axios is not like Fetch. For those of you who know the difference may thing this post is the most idiotic comparison.
+First thing to note is that Axios is not like Fetch.
 
 ### Lets look at fetch first.
 
