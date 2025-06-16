@@ -3,8 +3,8 @@ backend:
   repo: sewellstephens/11ty-decap-cms-boilerplate
   branch: main # Branch to update (optional; defaults to master)
 
-media_folder: "public/media"
-public_folder: "/media"
+media_folder: "public/images"
+public_folder: "/images"
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
