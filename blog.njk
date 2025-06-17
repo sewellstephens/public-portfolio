@@ -8,14 +8,13 @@ pagination:
   alias: pagedPosts
 ---
 
-<br>
-<h2 class="font-bold text-[20px]">Blog posts</h2>
+<h2>Blog posts</h2>
 
 {%- for post in collections.post -%}
    {% include 'article-snippet.njk' %}
 {%- endfor %}
 
-<div class="pagination">
+<div>
   {%- if pagination.previousPage -%}
     <a href="{{ pagination.href.previous }}">Previous</a>
   {%- endif -%}
@@ -25,6 +24,3 @@ pagination:
 </div>
 
 </div>
-<br />
-<br>
-<br>
