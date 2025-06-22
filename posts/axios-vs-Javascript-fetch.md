@@ -1,7 +1,7 @@
 ---
 layout: 'article.njk'
 title: Axios vs Javascript fetch
-date: 2023-04-03T04:02:00.000Z
+date: 2023-04-03
 tags: post
 ---
 

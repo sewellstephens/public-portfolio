@@ -3,14 +3,9 @@ layout: 'base.njk'
 ---
 
 <div class="max-w-[750px] m-auto p-1">
-    <br>
-<p style="font-size: 14px;"><a style="font-size: 35px;"><strong>{{ title }}</strong></a><br>{{ date | postDate }}</p>
-<br>
-<br>
+<p class="text-sm mt-6"><h2 class="text-3xl"><strong>{{ title }}</strong></h2>{{ date | postDate }}</p>
 
-<span>
-
-<div class="prose max-w-none">
+<div class="prose max-w-none mt-6">
   {{ content | safe }}
 </div>
 

@@ -15,6 +15,12 @@ module.exports = function(eleventyConfig) {
         return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
     });
 
+    eleventyConfig.addCollection("post", (collection) => {
+        return collection.getFilteredByTag("post").sort((a, b) => {
+            return b.date - a.date;
+        });
+    });
+
   return {
     dir: {
       input: ".",
