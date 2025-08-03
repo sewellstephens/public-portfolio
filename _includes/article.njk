@@ -1,0 +1,12 @@
+---
+layout: 'base.njk'
+---
+
+<div class="max-w-[750px] m-auto p-1">
+<p class="text-sm mt-6"><h2 class="text-3xl"><strong>{{ title }}</strong></h2>{{ date | postDate }}</p>
+
+<div class="prose max-w-none mt-6">
+  {{ content | safe }}
+</div>
+
+</div>

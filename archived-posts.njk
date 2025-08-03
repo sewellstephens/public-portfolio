@@ -1,0 +1,14 @@
+---
+layout: 'base-2.njk'
+eleventyImport:
+  collections: ["archived"]
+permalink: /archived-posts/
+---
+
+<h2>Blog posts</h2>
+
+{%- for post in collections.archived -%}
+   <p><a class="underline text-black hover:text-gray-600" href="{{ post.url }}">{{ post.data.title }}</a> - {{ post.data.date | postDate }}</p>
+{%- endfor %}
+
+<a href="/blog" class="underline text-black hover:text-gray-600">Show active posts</a>
