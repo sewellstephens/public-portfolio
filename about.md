@@ -52,8 +52,6 @@ Krastie AI is a content creation platform that uses AI to help you create conten
 
 I'm currently still working on Krastie AI to this day, and would love for you to check it out and follow my journey on [X](https://x.com/sewell_stephens).
 
-Full write up found [here](/posts/i-think-its-about-time-i-tell-my-backstory) (new)
-
 ## Contact
 
 If you'd like to get in touch, you can email me at sewellstephens104@gmail.com
